@@ -1,0 +1,62 @@
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#quote-box {
+  background-color: white;
+  border: 2px solid;
+  border-radius: 4px;
+  width: 50vw;
+  height: 30vh;
+  padding: 32px;
+}
+
+#text {
+  height: 50%;
+}
+
+#author {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 32px;
+  margin-bottom: 64px;
+}
+
+#buttons {
+  padding: 0 40px;
+  height: auto;
+}
+
+#tweet-quote {
+  position: relative;
+  margin: 0 4px;
+  float: left;
+}
+
+#tumblr-quote {
+  position: relative;
+  margin: 0 4px;
+  float: left;
+}
+
+#new-quote {
+  position: relative;
+  float: right;
+}
+
+button {
+  padding: 8px;
+}
+
+img {
+  height: 24px;
+  width: 24px;
+}
