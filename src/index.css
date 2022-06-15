@@ -1,5 +1,4 @@
 body {
-  background-color: black;
   height: 100vh;
   width: 100vw;
   padding: 0;
@@ -21,6 +20,7 @@ body {
 
 #text {
   height: 50%;
+  overflow: auto;
 }
 
 #author {
@@ -53,10 +53,12 @@ body {
 }
 
 button {
-  padding: 8px;
+  padding: 10px;
+  border: 0px transparent;
+  border-radius: 5px;
 }
 
-img {
+img, svg {
   height: 24px;
   width: 24px;
 }

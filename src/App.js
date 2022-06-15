@@ -1,17 +1,21 @@
 import React from 'react';
 import Quote from './Quote.js';
 import './App.css';
-import { useDispatch, useSelector } from 'react-redux';
-import { updateColor } from './Background.js';
+import { useSelector } from 'react-redux';
 
 const App = () => {
-  const background_color = useSelector((state) => (state.background));
-  useDispatch(updateColor);
+  const backgroundColor = useSelector((state) => (state.color));
 
+  document.querySelector('body').style.backgroundColor = `rgb(${backgroundColor.color})`;
+  document.querySelector('body').style.color = `rgb(${backgroundColor.color})`;
+  document.querySelectorAll('button').forEach((button) => {
+    button.style.backgroundColor = `rgb(${backgroundColor.color})`;
+  });
   return (
-      <div className="App" style={{backgroundColor: background_color}}>
+      <div className="App" style={{ backgroundColor }}>
         <Quote />
       </div>
-)};
+  );
+};
 
 export default App;

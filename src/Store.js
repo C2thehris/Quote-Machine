@@ -1,10 +1,10 @@
-import { configureStore, combineReducers } from '@reduxjs/toolkit'
-import quoteReducer from './GenerateQuote'
-import colorReducer from './Background'
+import { configureStore, combineReducers } from '@reduxjs/toolkit';
+import quoteReducer from './GenerateQuote';
+import colorReducer from './Background';
 
-const allReducers = {
-  quoteReducer,
-  colorReducer
-}
+const allReducers = combineReducers({
+  quote: quoteReducer,
+  color: colorReducer
+});
 
-export default configureStore({reducer: quoteReducer});
+export default configureStore({ reducer: allReducers });
